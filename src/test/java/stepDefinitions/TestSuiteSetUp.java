@@ -1,5 +1,5 @@
 package stepDefinitions;
-import com.sun.corba.se.spi.servicecontext.SendingContextServiceContext;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
     public void setUp(){
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
-            options.setHeadless(false);
+            options.setHeadless(true);
 
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -35,7 +35,7 @@ import java.util.concurrent.TimeUnit;
 
         @After
     public void tearDown(){
-//            driver.quit();
+            driver.quit();
         }
     }
 

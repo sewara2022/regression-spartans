@@ -1,5 +1,5 @@
 Feature: LogIn
-@regression
+@regression @login
   Scenario: Successful log-in
     Given I have chosen to login
     When I provide valid details

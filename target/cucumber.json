@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-01T21:56:55.197Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1336837000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.TestSuiteSetUp.setupSuite()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful log-in",
+        "description": "",
+        "id": "login;successful-log-in",
+        "after": [
+          {
+            "result": {
+              "duration": 76795000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.TestSuiteSetUp.lastStep()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2979877000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have chosen to login",
+            "match": {
+              "location": "stepDefinitions.LogIn.i_have_chosen_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1736148000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I provide valid details",
+            "match": {
+              "location": "stepDefinitions.LogIn.i_provide_valid_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1045873000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see logout button",
+            "match": {
+              "location": "stepDefinitions.LogIn.i_should_see_logout_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 412526000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Take a screenshot",
+            "match": {
+              "location": "stepDefinitions.LogIn.take_a_screenshot()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "LogIn",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/LogIn.feature",
+    "tags": []
+  }
+]
